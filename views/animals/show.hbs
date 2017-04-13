@@ -1,0 +1,18 @@
+<table>
+
+<tr>
+  <th><img src="{{animal.img_url}}" alt=""></th>
+  <th>{{animal.name}}</th>
+  <th>{{animal.kind}}</th>
+  <th>{{animal.age}}</th>
+  <th>{{animal.description}}</th>
+  <th>{{animal.available_for_adoption}}</th>
+  <th><form class="" action="/animals/{{animal.id}}?_method=DELETE" method="POST">
+    <input type="submit" class="btn btn-danger" name="delete" value="Delete"></input></th>
+  </form>
+  <th><button type="button" class="btn btn-info"><a href="/edit">Edit</a></button></th>
+  </th>
+</tr>
+
+
+</table>

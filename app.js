@@ -5,11 +5,11 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override')
 var hbs = require('hbs');
-var animals = require('./routes/animals/index')
  
 
 
 var index = require('./routes/index');
+var animals = require('./routes/animals')
 
 
 var app = express();

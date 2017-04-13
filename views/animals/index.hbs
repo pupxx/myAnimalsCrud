@@ -1,0 +1,31 @@
+
+<table class="table table-striped">
+
+<tr>
+  <th>Image</th>
+  <th>Name</th>
+  <th>Kind</th>
+  <th>Age</th>
+  <th>Description</th>
+  <th>Available For Adoption</th>
+  <th></th>
+  <th></th>
+</tr>
+
+{{#each allAnimals}}
+<tr>
+  <th><img src="{{this.img_url}}" alt=""></th>
+  <th><a href="/animals/{{this.id}}">{{this.name}}<a/></th>
+  <th>{{this.kind}}</th>
+  <th>{{this.age}}</th>
+  <th>{{this.description}}</th>
+  <th>{{this.available_for_adoption}}</th>
+  <th>
+    <form class="" action="/animals/{{this.id}}?_method=DELETE" method="POST">
+      <input type="submit" class="btn btn-danger" name="delete" value="Delete"></input></th>
+    </form>
+  <th><button type="button" class="btn btn-info"><a href="/edit">Edit</a></button></th>
+</tr>
+{{/each}}
+
+</table>
