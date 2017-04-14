@@ -6,7 +6,7 @@ exports.up = function(knex) {
     table.string('kind').notNullable();
     table.integer('age').notNullable();
     table.text('description');
-    table.boolean('is_adopted').notNullable();
+    table.boolean('is_adopted');
     table.timestamps(true, true);
   });
 };

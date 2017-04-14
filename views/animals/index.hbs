@@ -21,10 +21,10 @@
   <td>{{this.age}}</td>
   <td>{{this.description}}</td>
   <td><input type="checkbox" name="adopted" {{#if this.is_adopted}}checked="true"{{/if}} value="{{this.is_adopted}}"></td>
-  <th>
+  <td>
     <form class="" action="/animals/{{this.id}}?_method=DELETE" method="POST">
       <input type="submit" class="btn btn-danger" name="delete" value="Delete">
-    </th>
+    </td>
     </form>
   <td><button type="button" class="btn btn-info"><a href="/animals/{{this.id}}/edit">Edit</a></button></td>
 </tr>
