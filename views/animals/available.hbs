@@ -1,5 +1,7 @@
+<a href="/animals">See all animals</a>
+
 <a href="/animals/new">Create New</a>
-<a href="/animals/available">See all animals previously adopted</a>
+
 <table class="table table-striped">
 
 <tr>
@@ -13,7 +15,7 @@
   <th></th>
 </tr>
 
-{{#each allAnimals}}
+{{#each adopted}}
 <tr>
   <td><img src="{{this.img_url}}" alt=""></td>
   <td><a href="/animals/{{this.id}}">{{this.name}}<a/></td>
